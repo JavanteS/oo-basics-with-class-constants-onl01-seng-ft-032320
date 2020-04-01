@@ -6,9 +6,8 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    if BRANDS.select {|style| style.include?(@brand)}
+     BRANDS.select {|style| style.include?(@brand)}
     BRANDS << brand
-  end
   end
 
   def cobble
