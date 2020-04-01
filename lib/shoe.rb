@@ -7,6 +7,7 @@ class Shoe
   def initialize(brand)
     @brand = brand
     if BRANDS.select {|style| style.include?(@brand)}
+    else
     BRANDS << @brand
   end
   end
